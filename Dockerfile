@@ -7,7 +7,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy static website files (optional)
 # Assuming your static website files are in the 'html' directory
-COPY html /var/lib/jenkins/workspace/jenkins_job
+COPY /var/lib/jenkins/workspace/jenkins_job .
 
 # Expose port 80 for web traffic
 EXPOSE 80
