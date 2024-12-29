@@ -1,4 +1,4 @@
 FROM nginx:alpine
-copy ..
+COPY ..
 EXPOSE 80
 CMD ["nginx", "index.html"]
